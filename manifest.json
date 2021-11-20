@@ -1,0 +1,32 @@
+{
+    "manifest_version": 2,
+    "name": "Coding Font Family",
+    "version": "1.0.0",
+    "description": "Manage font family of coding content",
+    "icons": {
+        "16": "images/icon.png",
+        "48": "images/icon.png",
+        "128": "images/icon.png"
+    },
+    "browser_action": {
+        "default_icon": "images/icon.png",
+        "default_title": "Coding Font Family Management",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "js/lib/jquery.js",
+                "js/popup-callbacks.js",
+                "js/content-scripts.js"
+            ],
+            "run_at": "document_start"
+        }
+    ],
+    "permissions": [
+        "storage"
+    ]
+}

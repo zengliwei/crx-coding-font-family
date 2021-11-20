@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Font Family Management</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        html {
+            width: 200px;
+        }
+
+        body {
+            margin: 5px;
+        }
+
+        input {
+            border: 1px solid #efefef;
+            border-radius: 3px;
+            float: left;
+            font-size: 12px;
+            margin: 0 0 5px;
+            padding: 5px 10px;
+            width: 100%;
+        }
+
+        button {
+            border: 0;
+            border-radius: 3px;
+            font-size: 12px;
+            padding: 5px 10px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<form id="form">
+    <input name="selector" id="selector" type="text" placeholder="Enter element selector"/>
+    <button type="submit"><span>Update Font Family</span></button>
+</form>
+<!-- Inline script is not well supported, use file instead -->
+<script src="js/popup.js"></script>
+</body>
+</html>

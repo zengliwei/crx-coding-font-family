@@ -1,2 +1,3 @@
-# crx-coding-font-family
-Chrome Extension - Coding Font Family
+# Coding Font Family (Chrome Extension)
+
+This is a font family management of coding content.
